@@ -14,3 +14,10 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group(['prefix' => 'shades'], function () use ($router) {
+	$router->get('/', ['uses' => 'ShadesController@getCurrent']);
+
+	$router->post('/', ['uses' => 'ShadesController@setHeight']);
+});
+
