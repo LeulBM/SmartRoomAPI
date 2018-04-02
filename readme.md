@@ -1,16 +1,17 @@
 # CSH Smart Room Unified API
 
-This API will act as the unified face for all aspects of CSH's display Smart Room at ImagineRIT. More detailed ReadMe coming in the future.
+![PHP from Travis config](https://img.shields.io/travis/php-v/symfony/symfony.svg)
+![Travis branch](https://img.shields.io/travis/USER/REPO/BRANCH.svg)
+![apm](https://img.shields.io/apm/1/vim-node.svg)
 
+## Overview
+This API will act as the unified front for all aspects of CSH's Smart Room display at Imagine RIT. The various elements and their respective functionality will be detailed here.
 
-# Lumen PHP Framework
+## Connections
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+### [Smart Shades](https://github.com/axg4975/smart-window-shades)
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+| URL | Method | Description | URL Params | Body Params | Response |
+| --- | ------ | ----------- | ---------- | ----------- | -------- |
+| /shades/ | GET | Get status of the shades | N/A | N/A | {"data":"45","status":200} |
+| /shades/ | POST | Move shades to desired height | N/A | howOpen: number between 0 and 100, with 0 being fully closed | {"status":200} |
