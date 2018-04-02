@@ -1,8 +1,7 @@
 # CSH Smart Room Unified API
 
 ![PHP from Travis config](https://img.shields.io/travis/php-v/symfony/symfony.svg)
-![Travis branch](https://img.shields.io/travis/USER/REPO/BRANCH.svg)
-![apm](https://img.shields.io/apm/1/vim-node.svg)
+[![License:MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 This API will act as the unified front for all aspects of CSH's Smart Room display at Imagine RIT. The various elements and their respective functionality will be detailed here.
