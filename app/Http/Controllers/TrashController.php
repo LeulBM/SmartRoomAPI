@@ -16,5 +16,6 @@ class TrashController extends Controller {
 	}
 
 	public function temp(){
-		return response('nothing here yet, waiting on project updates',200);
+		return response('Nothing here yet, Waiting on project updates from Trev',200);
 	}
+}
