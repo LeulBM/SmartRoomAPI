@@ -21,3 +21,16 @@ $router->group(['prefix' => 'shades'], function () use ($router) {
 	$router->post('/', ['uses' => 'ShadesController@setHeight']);
 });
 
+$router->group(['prefix' => 'doors'], function () use ($router) {
+	$router->get('/', ['uses' => 'DoorController@temp']);
+});
+
+$router->group(['prefix' => 'face'], function () use ($router) {
+	$router->get('/', ['uses' => 'FaceController@temp']);
+});
+
+$router->group(['prefix' => 'trash'], function () use ($router) {
+	$router->get('/', ['uses' => 'TrashController@temp']);
+});
+
+
