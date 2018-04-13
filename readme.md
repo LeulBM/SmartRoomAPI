@@ -13,5 +13,5 @@ via Openshift.
 
 | URL | Method | Description | URL Params | Body Params | Response |
 | --- | ------ | ----------- | ---------- | ----------- | -------- |
-| /shades/ | GET | Get status of the shades | N/A | N/A | {"data":"45","status":200} |
-| /shades/ | POST | Move shades to desired height | N/A | howOpen: number between 0 and 100, with 0 being fully closed | {"status":200} |
+| /shades/ | GET | Get status of the shades | N/A | N/A | {"howOpen": "45"} |
+| /shades/ | POST | Move shades to desired height | N/A | howOpen: number between 0 and 100, with 0 being fully closed | Success |
