@@ -59,6 +59,10 @@ $app->singleton(
 */
 
 // $app->middleware([
+// 	App\Http\Middleware\JsonRequestMiddleware::class
+// ]);
+
+// $app->middleware([
 //    App\Http\Middleware\ExampleMiddleware::class
 // ]);
 
