@@ -5,6 +5,7 @@
 
 ## Overview
 This API will act as the unified front for all aspects of CSH's Smart Room display at Imagine RIT. The various elements and their respective functionality will be detailed here. Hosted at [smartroom-api.csh.rit.edu](https://smartroom-api.csh.rit.edu)
+via Openshift.
 
 ## Connections
 

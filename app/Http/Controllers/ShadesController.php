@@ -20,10 +20,9 @@ class ShadesController extends Controller{
     public function getCurrent() {
         try{
             $response = $this->http->get('get/current');
-            print_r("test");
             $dataresponse = json_decode($response->getBody(), true);
             $toreturn = array('howOpen' => $dataresponse["data"]);
-            return response()->json(json_encode($toreturn), $response->getStatusCode());
+            return response()->json($toreturn, $response->getStatusCode());
         }
         // Catch any errors, typically timeouts
         catch(\Exception $e) {
@@ -38,7 +37,7 @@ class ShadesController extends Controller{
             if(is_numeric($inputdata["howOpen"])){
                 if($inputdata["howOpen"] >= 0 && $inputdata["howOpen"] <= 100) {
                     try {
-                        $response = $this->http->post(json_encode($inputdata));
+                        $response = $this->http->post("".$inputdata["howOpen"]);
                         if($response->getStatusCode()==200)
                             return response("Success", $response->getStatusCode());
                         else
