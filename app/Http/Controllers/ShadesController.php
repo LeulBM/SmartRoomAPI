@@ -11,7 +11,7 @@ class ShadesController extends Controller{
 
     // Create Guzzle client
     public function __construct() {
-        $this->http = new Client(['base_uri' => 'https://shades.student.rit.edu:5000/gpio/',
+        $this->http = new Client(['base_uri' => 'http://shades.student.rit.edu:5000/gpio/',
                     'timeout' => 5,
                     'connect_timeout'=> 5]);
     }
